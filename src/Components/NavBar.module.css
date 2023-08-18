@@ -1,0 +1,82 @@
+.Nav{
+    color: rgb(121, 120, 120);
+    width: 10%;
+    position: fixed;
+    border-radius: 10px;
+    transition: 0.5s;
+    height: fit-content;
+    background-color: rgb(42, 43, 44);
+    border-style: solid;
+    padding: 5px 0px;
+    border-color: white;
+    display: block;
+    margin: 5px 5px 0 0;
+    z-index: 2;
+    
+}
+.ul{    
+    margin-top: 0;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+.li{
+    display: block;
+    margin: 0 ;
+    
+}
+
+
+
+.hr{
+    margin: 0;
+    height: 2px;
+    border: none;
+   background-color: rgb(121, 120, 120);
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+a {
+    
+    text-decoration: none;
+    color: inherit;
+
+}
+.liDiv{
+    padding: 15px 0px;
+    transition: 0.4s;
+    width: 100%;
+    
+}
+
+.liDiv:hover {
+    border-bottom: solid 1px white;
+    color: white;
+    transform: translateY(-10%);
+    background-color: rgb(49, 51, 52);
+    cursor: pointer;
+    
+}
+
+button{
+    all: unset;
+}
+.button{
+    transition: 0.4s;
+}
+
+.button:hover{
+    transform: scale(0.95);
+    border-bottom: solid 1px white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 951px) {
+ .Nav{
+    width: 15%;
+ }   
+}

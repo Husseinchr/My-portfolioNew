@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamad's Portfilio</title>
+    <link class="icon" rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/784871ec82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img src="images/logo1.jpg" class="logo">
+            <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+           </nav> 
+           <div class="header-text">
+            <h1>Hello,I am  <span>Mohamad</span><br>Jawad Hachem </h1>
+            <p>Full stack developper</p>
+           </div>
+
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/About me.jpg" >
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-titles">About Me</h1>
+                        <p>I am Mohamad jawad Hachem, a computer science student and a full stack developper</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience </p>
+                            <p class="tab-links" onclick="opentab('Education')">Education </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills"> <ul>
+                            <li> <span>front-end</span><br>Expert in React.js</li>
+                            <li> <span>back-end</span><br>Expert in Node.js</li>
+                            <li> <span>OOP</span><br>Expert in python</li>
+                            </ul>
+                        </div>
+                            <div class="tab-contents" id="Experience">
+                               <ul><li><span>2023-Current</span><br>Internship at Bytetactix </li></ul> 
+                                
+                            </div>
+                            <div class="tab-contents" id="Education"><ul>
+                                <li><span>2007-2019</span><br>School at sagesse brasilia</li>
+                                <li><span>2019-2022</span><br>High school at al mahdi schools</li>
+                                <li><span>2022-current</span><br>Computer sience bachelor at USJ</li>
+                            </ul></div>
+                                
+                            </div>    
+                            
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titles">My services</h1>
+            <div class="services-list">
+                <div>
+                     <h2>Web Design</h2>
+                     <i class="fa-solid fa-code"></i>
+                     <p>Bulding full stack web apps using react and node.js.</p>
+                     <a href="#contact">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>mobile design</h2>
+                    <p>Bulding Mobile apps using React native</p>
+                    <a href="#contact">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>python program</h2>
+                    <p>Bulding Python programs.</p>
+                    <a href="#contact">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-lists">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>web applications</h3>
+                        
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3>python programs</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>Mobile Apps</h3>
+                        
+                        <a href="#"><i class="fa-solid fa-link"></i></a>  
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+<!--contact-->
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mjawadhachem@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>71717506</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/___mohamadddd___?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Mjawadhachem"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="#"Download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form  name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email"required>
+                        <textarea name="Message" id="Message" cols="7" rows="10">Your Message</textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">hello</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0px"
+            
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxpjhKjVMis6_iTog_xUF3LJ05bo-sIErJrWpZdyM-1gsUyzosezJF5YTSD12ofe4c/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfuly"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
