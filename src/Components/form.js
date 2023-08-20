@@ -55,7 +55,9 @@ const BasicForm = (props) => {
       className={classes.form}
       style={
         props.ShowFormState
-          ? { position: "absolute", top: "245%", transition: "0.7s" }
+          ? props.checkHeight
+            ? { position: "absolute", top: "255%", transition: "0.7s" }
+            : { position: "absolute", top: "245%", transition: "0.7s" }
           : {
               position: "absolute",
               top: "-200%",

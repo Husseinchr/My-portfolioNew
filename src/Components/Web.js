@@ -19,6 +19,13 @@ const Web = (props) => {
     }
   };
 
+  const check = () => {
+    if (Window.innerHeight > "750px") {
+      return true;
+    }
+    return false;
+  };
+
   return (
     <div onClick={ShowSideBarClickWeb} className={classes.container}>
       <div className={classes.Web}>
@@ -138,12 +145,19 @@ const Web = (props) => {
       <div id="about-section" className={classes.about}>
         <div id="message" className={classes.aboutSide}>
           <BasicForm
+            checkHeight={check}
             ShowFormState={ShowForm}
             ShowFormClickButtonForm={ShowFormHandler}
           ></BasicForm>
 
           <button
-            style={ShowForm ? { top: "-200px" } : { top: "250%" }}
+            style={
+              ShowForm
+                ? { top: "-200px" }
+                : check()
+                ? { top: "250%" }
+                : { top: "260%" }
+            }
             onClick={ShowFormHandler}
             className={classes.send}
           >
