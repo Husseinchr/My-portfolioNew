@@ -150,7 +150,7 @@ const Web = (props) => {
             Send a Message
           </button>
         </div>
-        <div className={classes.aboutInfo}>
+        <div id="aboutsection" className={classes.aboutInfo}>
           <h1>About me</h1>
           <p className={classes.p2}>
             Hello , I'm <b> Hussein Chreif </b>:

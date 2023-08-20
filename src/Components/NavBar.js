@@ -40,7 +40,7 @@ const NavBar = (props) => {
           <button
             className={classes.liDiv}
             onClick={() => {
-              window.location.href = "#about-section";
+              window.location.href = "#aboutsection";
               props.ShowSideBarClick();
             }}
           >
