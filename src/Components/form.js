@@ -55,7 +55,7 @@ const BasicForm = (props) => {
       className={classes.form}
       style={
         props.ShowFormState
-          ? props.checkHeight
+          ? props.checkHeight > props.checkbreakpoint
             ? { position: "absolute", top: "255%", transition: "0.7s" }
             : { position: "absolute", top: "245%", transition: "0.7s" }
           : {

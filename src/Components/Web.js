@@ -5,9 +5,12 @@ import back2 from "../images/5809368.jpg";
 import back3 from "../images/R.jpg";
 import { useState } from "react";
 import BasicForm from "./form";
+import useViewport from "../hooks/use-viewPort";
 
 const Web = (props) => {
   const [ShowForm, setShowForm] = useState(false);
+  const height = useViewport();
+  const breakpoint = 740;
 
   const ShowFormHandler = (event) => {
     setShowForm(!ShowForm);
@@ -17,13 +20,6 @@ const Web = (props) => {
     if (props.ShowSideBarState) {
       return props.ShowSideBarClickButton();
     }
-  };
-
-  const check = () => {
-    if (Window.innerHeight > "750px") {
-      return true;
-    }
-    return false;
   };
 
   return (
@@ -145,7 +141,8 @@ const Web = (props) => {
       <div id="about-section" className={classes.about}>
         <div id="message" className={classes.aboutSide}>
           <BasicForm
-            checkHeight={check}
+            checkbreakpoint={breakpoint}
+            checkHeight={height}
             ShowFormState={ShowForm}
             ShowFormClickButtonForm={ShowFormHandler}
           ></BasicForm>
@@ -154,7 +151,7 @@ const Web = (props) => {
             style={
               ShowForm
                 ? { top: "-200px" }
-                : check()
+                : height < breakpoint
                 ? { top: "250%" }
                 : { top: "260%" }
             }
