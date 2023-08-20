@@ -10,7 +10,7 @@ import useViewport from "../hooks/use-viewPort";
 const Web = (props) => {
   const [ShowForm, setShowForm] = useState(false);
   const height = useViewport();
-  const breakpoint = 740;
+  const breakpoint = 800;
 
   const ShowFormHandler = (event) => {
     setShowForm(!ShowForm);
