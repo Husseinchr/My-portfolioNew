@@ -58,9 +58,6 @@ const Web = (props) => {
         <h1 className={classes.h1s}>My Services</h1>
         <div className={classes.workContainer}>
           <div
-            onClick={() => {
-              window.location.href = "#message";
-            }}
             style={{ backgroundImage: `url(${back1})` }}
             className={classes.workList}
           >
@@ -84,9 +81,6 @@ const Web = (props) => {
             </div>
           </div>
           <div
-            onClick={() => {
-              window.location.href = "#message";
-            }}
             style={{ backgroundImage: `url(${back2})` }}
             className={classes.workList}
           >
@@ -110,9 +104,6 @@ const Web = (props) => {
             </div>
           </div>
           <div
-            onClick={() => {
-              window.location.href = "#message";
-            }}
             style={{ backgroundImage: `url(${back3})` }}
             className={classes.workList}
           >
